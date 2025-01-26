@@ -1,0 +1,4 @@
+### Step 1.1: Create an S3 Bucket
+- Created an S3 bucket named `stocksense-india-stock-data` to store stock market data.
+- Configured it with the appropriate permissions and settings.
+
