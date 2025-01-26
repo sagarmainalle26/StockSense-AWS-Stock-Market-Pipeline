@@ -1,4 +1,16 @@
+1. Fetch Data from Yahoo Finance API (Automated Ingestion)
+
 ### Step 1.1: Create an S3 Bucket
 - Created an S3 bucket named `stocksense-india-stock-data` to store stock market data.
 - Configured it with the appropriate permissions and settings.
+
+
+### Step 1.2: Create a Lambda Execution Role
+- Created an IAM role named `lambda-s3-cloudwatch-role` to enable Lambda to interact with S3 and CloudWatch.
+- Assigned the following permissions to the role:
+    - **S3**: `s3:PutObject` to allow uploading data to the S3 bucket.
+    - **CloudWatch Logs**: `logs:*` to enable logging for the Lambda function.
+- Attached the role to the Lambda function during its creation to ensure proper access and functionality.
+
+
 
